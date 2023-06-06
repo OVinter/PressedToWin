@@ -37,7 +37,7 @@ namespace PressedToWin.Controllers
             return Ok(a);
         }
 
-        [HttpGet("SendMessage")]
+        [HttpPost("SendMessage")]
         public async Task<IActionResult> SendPhoneMessage([FromBody] PhoneMessage phoneMessage)
         {
             var token = Request.GetAuthToken();
@@ -47,9 +47,9 @@ namespace PressedToWin.Controllers
             TwilioClient.Init(accountSid, authToken);
 
             var message = MessageResource.Create(
-                body: phoneMessage.Message,
+                body: phoneMessage.message,
                 from: new Twilio.Types.PhoneNumber("+13203789578"),
-                to: new Twilio.Types.PhoneNumber($":{phoneMessage.PhoneNumber}")//+40743357281
+                to: new Twilio.Types.PhoneNumber($":{phoneMessage.phoneNumber}")//+40743357281
             );
 
             Console.WriteLine(message.Sid);
