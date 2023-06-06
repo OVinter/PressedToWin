@@ -2,7 +2,7 @@
 {
     public class PhoneMessage
     {
-        public string PhoneNumber;
-        public string Message;
+        public string phoneNumber;
+        public string message;
     }
 }
