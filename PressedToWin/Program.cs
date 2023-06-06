@@ -16,7 +16,7 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-
+app.UseCors("MyPolicy");
 
 app.MapControllerRoute(
     name: "default",
