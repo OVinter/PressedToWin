@@ -48,7 +48,20 @@
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "web-animations-js": "2.3.2",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "@canonpp/common-auth": "1.0.0",
+    "@canonpp/common-auth-duif-provider": "4.0.1",
+    "@canonpp/duif-core": "6.8.1",
+    "@canonpp/duif-cpp-components": "6.8.1",
+    "@canonpp/duif-e2e-api": "6.8.1",
+    "@canonpp/duif-layout": "6.8.1",
+    "@canonpp/duif-ocean": "6.8.1",
+    "@canonpp/duif-ocean-e2e-api": "6.8.1",
+    "@canonpp/duif-cpp-primeng": "6.8.1",
+    "@canonpp/duif-shared": "6.8.1",
+    "@ngx-translate/core": "^14.0.0",
+    "@ngx-translate/http-loader": "^7.0.0",
+    "@angular-architects/module-federation": "^14.3.12"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.7",
